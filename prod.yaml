@@ -17,8 +17,14 @@ services:
     depends_on:
       - db
       - smtp
+    volumes:
+      - /data/database/odoo:/backup
     networks:
       default:
+    # still on 15 port because lazzy
+    ports:
+      - "15069:8069"
+      - "15072:8072"
     labels:
       doodba.domain.main: ""
 

@@ -1,0 +1,20 @@
+account-financial-reporting:
+  - "*"
+account-financial-tools:
+  - "*"
+account-reconcile:
+  - "*"
+bank-statement-import:
+  - "*"
+mis-builder:
+  - "*"
+partner-contact:
+  - "*"
+reporting-engine:
+  - "*"
+server-brand:
+  - "*"
+server-ux:
+  - "*"
+web:
+  - "*"
