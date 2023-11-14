@@ -16,7 +16,6 @@ services:
       PGUSER: &dbuser "odoo"
       PROXY_MODE: "false"
       LIST_DB: "false"
-    hostname: "jguenat.ch"
     tty: true
     volumes:
       - filestore:/var/lib/odoo:z
