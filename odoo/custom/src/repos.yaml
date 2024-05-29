@@ -15,6 +15,15 @@
     # Example of a merge of the PR with the number <PR>
     # - oca refs/pull/<PR>/head
 
+./design-themes:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    odoo: https://github.com/odoo/design-themes.git
+  target: odoo $ODOO_VERSION
+  merges:
+    - odoo $ODOO_VERSION
+
 ./account-financial-reporting:
   defaults:
     depth: 100
