@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v5.3.5
+_commit: v8.3.10
 _src_path: gh:Tecnativa/doodba-copier-template
 backup_dst: ""
 cidr_whitelist: null
@@ -11,7 +11,7 @@ odoo_initial_lang: fr_CH
 odoo_listdb: false
 odoo_oci_image: docker.jguenat.ch/jguenat
 odoo_proxy: ""
-odoo_version: 16.0
+odoo_version: 18.0
 paths_without_crawlers:
   - /web
   - /website/info
@@ -22,10 +22,5 @@ postgres_version: "15"
 project_author: Julien Guenat
 project_license: AGPL-3.0-or-later
 project_name: jguenat
-smtp_canonical_default: jguenat.ch
-smtp_canonical_domains: null
-smtp_default_from: odoo@jguenat.ch
-smtp_relay_host: mail.infomaniak.com
-smtp_relay_port: 587
-smtp_relay_user: julien@jguenat.ch
-smtp_relay_version: "10"
+smtp_default_from: ""
+smtp_relay_host: ""

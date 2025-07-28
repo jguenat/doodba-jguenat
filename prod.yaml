@@ -13,10 +13,10 @@ services:
       DB_FILTER: "^prod"
       DOODBA_ENVIRONMENT: "${DOODBA_ENVIRONMENT-prod}"
       INITIAL_LANG: "fr_CH"
-      SMTP_SERVER: smtplocal
+      ODOO_BUS_PUBLIC_SAMESITE_WS: 1
+      PGHOST: jguenat-18-0-prod-db
     depends_on:
       - db
-      - smtp
     volumes:
       - /data/database/odoo:/backup
     networks:
@@ -32,21 +32,15 @@ services:
     extends:
       file: common.yaml
       service: db
+    environment:
+      DB_HOST: jguenat-18-0-prod-db
     env_file:
       - .docker/db-creation.env
     restart: unless-stopped
-
-  smtp:
-    extends:
-      file: common.yaml
-      service: smtpreal
-    env_file:
-      - .docker/smtp.env
     networks:
       default:
         aliases:
-          - smtplocal
-    restart: unless-stopped
+          - "jguenat-18-0-prod-db"
 
 networks:
   default:
@@ -56,8 +50,3 @@ networks:
 volumes:
   filestore:
   db:
-  mailconfig:
-  maildata:
-  maillogs:
-  maillogssupervisord:
-  mailstate:
