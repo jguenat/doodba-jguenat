@@ -10,37 +10,13 @@ bank-payment:
   - "*"
 bank-statement-import:
   - "*"
-calendar:
-  - "*"
-contract:
-  - "*"
-e-commerce:
-  - "*"
-event:
-  - "*"
-hr:
-  - "*"
-hr-attendance:
-  - "*"
-hr-expense:
-  - "*"
-hr-holidays:
-  - "*"
 l10n-switzerland:
   - "*"
 mis-builder:
   - "*"
 partner-contact:
   - "*"
-pos:
-  - "*"
-product-attribute:
-  - "*"
-purchase-workflow:
-  - "*"
 reporting-engine:
-  - "*"
-sale-workflow:
   - "*"
 server-backend:
   - "*"
@@ -52,11 +28,5 @@ server-ux:
   - "*"
 social:
   - "*"
-survey:
-  - "*"
 web:
-  - "*"
-website:
-  - "*"
-design-themes:
   - "*"
